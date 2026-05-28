@@ -72,7 +72,7 @@ jobs:
               if [[ "$MERGE_STATUS" == "conflicts" ]]; then
                 BODY="This PR syncs updates from the [template repository](https://github.com/${{ github.repository }}).
 
-          > ⚠️ **Merge conflicts detected.** Please resolve them before merging."
+          > ⚠️ **This PR contains conflict markers (\`<<<<<<<\`) in one or more files.** The changes from the template conflicted with local modifications in this repo. You'll need to resolve them manually (search for \`<<<<<<<\`) before merging — GitHub will show \`No conflicts with base branch\` regardless, since that only checks whether the PR branch can be merged, not whether the file contents are valid."
               else
                 BODY="This PR syncs updates from the [template repository](https://github.com/${{ github.repository }})."
               fi

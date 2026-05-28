@@ -1,0 +1,5 @@
+# Child repos to receive template sync PRs
+# Format: owner/repo  (one per line)
+# Lines starting with # and blank lines are ignored
+
+culturedatacommons/harvester-dcla-programs-funding
